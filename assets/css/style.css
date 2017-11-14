@@ -1,0 +1,145 @@
+/* Base CSS */
+
+
+@font-face{font-family:codebold;src:url(../fonts/code_bold.eot);src:url(../fonts//code_bold.eot) format('embedded-opentype'),url(../fonts//code_bold.woff2) format('woff2'),url(../fonts//code_bold.woff) format('woff'),url(../fonts//code_bold.ttf) format('truetype'),url(../fonts//code_bold.svg#codebold) format('svg');font-weight:400;font-style:normal}
+
+@font-face{font-family:codeLight;src:url(../fonts/code_light.eot);src:url(../fonts//code_light.eot) format('embedded-opentype'),url(../fonts//code_light.woff2) format('woff2'),url(../fonts//code_light.woff) format('woff'),url(../fonts//code_light.ttf) format('truetype'),url(../fonts//code_light.svg#codelight) format('svg');font-weight:400;font-style:normal}
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: normal;
+    font-family: 'codeLight', sans-serif;
+}
+
+body {
+   font-family: 'Karla', sans-serif;
+}
+
+a:hover { text-decoration: none };
+
+.header-area a.menu-trigger{
+    display: none;
+}
+
+html,body{
+    height: 100%;
+}
+
+.header-area{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+.header-area a{
+    color:#5b3f61;
+}
+
+.header-left ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.header-left ul li{
+    display: inline-block;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.header-right{
+    text-align: right;
+}
+
+.header-right a{
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 10px;
+}
+
+.header-right .search-trigger i.fa{
+    padding-left: 10px;
+}
+
+.header-right a img{
+    padding-left: 15px;
+}
+
+.banner-bg{
+    background-image: url(../img/bg.jpg);
+    background-color: #ddd;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.single-slide-item{
+    position: relative;
+}
+
+.single-slide-item .slide-img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 600px;
+    transform: translatex(-50%);
+}
+
+.slide-text-table{
+    display: table;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+}
+
+.slide-text-tablecell{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 20%;
+    color: #e84f88;
+    font-size: 120px;
+    line-height: 100px;
+    text-transform: capitalize;
+    font-family: codeLight, sans-serif;
+    font-weight: normal;
+}
+
+.slide-text-tablecell strong{
+    font-family: codeBold;
+    font-weight: normal;
+}
+
+.altarnative-color{
+    color: #6db0c6;
+}
